@@ -1,18 +1,21 @@
-ÏÈ´Ó×î¼òµ¥µÄ¿ªÊ¼£¬µ¥ÀıÄ£Ê½
-¹ËÃûË¼Òå£¬Ö»ÓĞÒ»¸öÊµÀı£¬Í¨³£ÊÇÄ³¸öÀà»ò¶ÔÏó
-javaÀàÖĞµÄstaticÊôĞÔÊÇÖ¸Ä³¸ö±äÁ¿»òº¯ÊıÖ»³õÊ¼»¯Ò»´Î£¬¶à´ÎÉú³ÉÊµÀıÒ²Ö»ÊÇµÚÒ»´Î³õÊ¼»¯µÄ¶ÔÏó£¬ËùÒÔ¿ÉÒÔÓÃstaticÀ´±êÖ¾µ¥Àı¶ÔÏó
-´úÂë
-public class Singleton{
-	private static Singleton singleton = new Singleton();
-	private Singleton(){
-			System.out.println(¡°Éú³ÉÁËÒ»¸öµ¥Àı");
+å…ˆä»æœ€ç®€å•çš„å¼€å§‹ï¼Œå•ä¾‹æ¨¡å¼
+é¡¾åæ€ä¹‰ï¼Œåªæœ‰ä¸€ä¸ªå®ä¾‹ï¼Œé€šå¸¸æ˜¯æŸä¸ªç±»æˆ–å¯¹è±¡
+javaç±»ä¸­çš„staticå±æ€§æ˜¯æŒ‡æŸä¸ªå˜é‡æˆ–å‡½æ•°åªåˆå§‹åŒ–ä¸€æ¬¡ï¼Œå¤šæ¬¡ç”Ÿæˆå®ä¾‹ä¹Ÿåªæ˜¯ç¬¬ä¸€æ¬¡åˆå§‹åŒ–çš„å¯¹è±¡ï¼Œæ‰€ä»¥å¯ä»¥ç”¨staticæ¥æ ‡å¿—å•ä¾‹å¯¹è±¡
+ä»£ç 
+public class Singleton{  
+
+	private static Singleton singleton = new Singleton();  
+	
+	private Singleton(){  
+	
+			System.out.println(â€œç”Ÿæˆäº†ä¸€ä¸ªå•ä¾‹");
 		}
 	public static Singleton getInstance(){
 			return singleton;
 			}
 }
 
-javascript °æ±¾
+javascript ç‰ˆæœ¬
 
 
 var getSingle = function (fn) {
