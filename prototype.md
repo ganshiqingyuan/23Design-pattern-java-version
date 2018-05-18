@@ -1,18 +1,20 @@
-#Ô­ĞÍÄ£Ê½
-###¼´¶Ô´óµÄ¶ÔÏóÌáÇ°×ö¸ö¿½±´£¬Ê¹ÓÃÊ±Ö±½Ó¸´ÖÆ¶ø²»ÓÃÖØĞÂÉú³É
-###javaÖĞ¿ÉÒÔÓÃ½Ó¿ÚµÄ¸ÅÄî£¬Ã÷È··½·¨£¬×ÓÀà×ö³ö²»Í¬ÊµÏÖ×÷ÎªÔ­ĞÍ£¬ÔÙ×¢²áµ½µ÷ÓÃÉÏ½øĞĞ²»Í¬µÄµ÷ÓÃ£¬
+#åŸå‹æ¨¡å¼
+###å³å¯¹å¤§çš„å¯¹è±¡æå‰åšä¸ªæ‹·è´ï¼Œä½¿ç”¨æ—¶ç›´æ¥å¤åˆ¶è€Œä¸ç”¨é‡æ–°ç”Ÿæˆ
+###javaä¸­å¯ä»¥ç”¨æ¥å£çš„æ¦‚å¿µï¼Œæ˜ç¡®æ–¹æ³•ï¼Œå­ç±»åšå‡ºä¸åŒå®ç°ä½œä¸ºåŸå‹ï¼Œå†æ³¨å†Œåˆ°è°ƒç”¨ä¸Šè¿›è¡Œä¸åŒçš„è°ƒç”¨ï¼Œ
 
-* ProductÀà   ÉùÃ÷ÁË³éÏó·½·¨Ê¹ÓÃuse ºÍ ´´½¨¿ËÂ¡¶ÔÏó·½·¨ createCloneµÄ½Ó¿Ú
-* ManagerÀà  ×¢²á²»Í¬µÄÔ­ĞÍ£¬½øĞĞÔ­ĞÍ¿ËÂ¡µ÷ÓÃ
-* MessageBoxÀà Ô­ĞÍÀà£¬ÊµÏÖÁË½Ó¿ÚµÄ·½·¨£¬·½·¨ÄÚÈİÎª½«×Ö·û´®·ÅÈë·½¿òÖĞ
-* UnderLinePenÀà Ô­ĞÍÀà£¬ÊµÏÖÁË½Ó¿ÚµÄ·½·¨£¬·½·¨ÄÚÈİÎª¸ø×Ö·û´®¼ÓÉÏÏÂ»®Ïß
+* Productç±»   å£°æ˜äº†æŠ½è±¡æ–¹æ³•ä½¿ç”¨use å’Œ åˆ›å»ºå…‹éš†å¯¹è±¡æ–¹æ³• createCloneçš„æ¥å£
+* Managerç±»  æ³¨å†Œä¸åŒçš„åŸå‹ï¼Œè¿›è¡ŒåŸå‹å…‹éš†è°ƒç”¨
+* MessageBoxç±» åŸå‹ç±»ï¼Œå®ç°äº†æ¥å£çš„æ–¹æ³•ï¼Œæ–¹æ³•å†…å®¹ä¸ºå°†å­—ç¬¦ä¸²æ”¾å…¥æ–¹æ¡†ä¸­
+* UnderLinePenç±» åŸå‹ç±»ï¼Œå®ç°äº†æ¥å£çš„æ–¹æ³•ï¼Œæ–¹æ³•å†…å®¹ä¸ºç»™å­—ç¬¦ä¸²åŠ ä¸Šä¸‹åˆ’çº¿
 
 ###Product
+
     public interface Product extends Cloneable{
         public abstract void use (String s);   //
         public abstract Product creatClone();
         }
 ###Manager
+
     public class Manager{
         private HashMap showcase = new HashMap();
         public void register (String name,Product proto){
@@ -24,6 +26,7 @@
             }
         }
 ###MessageBox
+
     private char decochar;
     public MessageBox(char decochar){
         this.decochar=decochar
@@ -42,9 +45,11 @@
         }
     }
 ####Underkine
-Õâ¸öÀàËÆ£¬Ö»²»¹ıÊÇ±ä³É¼ÓÏÂ»®Ïß
 
-####Èë¿Ú´úÂë
+è¿™ä¸ªç±»ä¼¼ï¼Œåªä¸è¿‡æ˜¯å˜æˆåŠ ä¸‹åˆ’çº¿
+
+####å…¥å£ä»£ç 
+
     public static void main (String[] args){
     Manager manager = new Manager();
     UnderlinePen upen = new UnderlinePen('~');
@@ -64,4 +69,5 @@
     }
     
 ####javascript
-´´½¨¶à¸öÔ­ĞÍ±¸·İ£¬¸´ÖÆ¶ÔÏóÊ±Ê¹ÓÃobject.creat·½·¨½«protoÖ¸ÏòÔ­ĞÍ¶ÔÏó
+
+åˆ›å»ºå¤šä¸ªåŸå‹å¤‡ä»½ï¼Œå¤åˆ¶å¯¹è±¡æ—¶ä½¿ç”¨object.creatæ–¹æ³•å°†protoæŒ‡å‘åŸå‹å¯¹è±¡
