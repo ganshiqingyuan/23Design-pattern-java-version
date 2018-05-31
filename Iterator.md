@@ -10,6 +10,7 @@
 
 java实现
 ###Aggregate  接口，，被遍历的集合接口
+
     public interface Aggregate {
     public abstract Iterator iterator();
     }
