@@ -9,18 +9,24 @@
 这种方式进行访问，只需要修改构造迭代器的方式即可，大大复用了代码
 
 java实现
+
+
+
 ###Aggregate  接口，，被遍历的集合接口
+
     public interface Aggregate {
     public abstract Iterator iterator();
     }
 
 ###Iterator   接口，，迭代器接口，提供迭代器方法
+
     public interface Iterator {
     public abstract boolean hasNext();
     public abstract Object next();
     }
 
 ####Book   类，，表示书
+
     public class Book {
     private String name;
     public Book(String name) {
@@ -31,6 +37,7 @@ java实现
     }
     }  
 ####BookShelf   类，，表示书架  实现 集合接口
+
     public class BookShelf implements Aggregate {
     private Book[] books;
     private int last = 0;
@@ -52,6 +59,7 @@ java实现
     }
     }
 ####BookShelfIterator   类，，实现迭代器接口
+
     public class BookShelfIterator implements Iterator {
     private BookShelf bookShelf;
     private int index;
@@ -76,7 +84,9 @@ java实现
 
 
 
+
 ####入口代码
+
     import java.util.*;
 
     public class Main {
