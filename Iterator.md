@@ -9,6 +9,9 @@
 这种方式进行访问，只需要修改构造迭代器的方式即可，大大复用了代码
 
 java实现
+
+
+
 ###Aggregate  接口，，被遍历的集合接口
 
     public interface Aggregate {
