@@ -1,26 +1,28 @@
-##µü´úÆ÷Ä£Ê½
+##è¿­ä»£å™¨æ¨¡å¼
      
 
-¶ÔÒ»¸ö¼¯ºÏ½øĞĞµü´ú·ÃÎÊ£¬ÒÔ¹Ì¶¨µÄ·½Ê½£¬±ÈÈç.next()£¬µ±ĞŞ¸ÄÊèºö´æ´¢ÀàĞÍÊ±±ÈÈçÔ­ÏÈÊÇÓÃµÄÊı×é£¬ÏÖÔÚ±äÎª¶ÔÏó¼¯ºÏ£¬ÄãÈÔÈ»¿ÉÒÔÊ¹ÓÃ
+å¯¹ä¸€ä¸ªé›†åˆè¿›è¡Œè¿­ä»£è®¿é—®ï¼Œä»¥å›ºå®šçš„æ–¹å¼ï¼Œæ¯”å¦‚.next()ï¼Œå½“ä¿®æ”¹ç–å¿½å­˜å‚¨ç±»å‹æ—¶æ¯”å¦‚åŸå…ˆæ˜¯ç”¨çš„æ•°ç»„ï¼Œç°åœ¨å˜ä¸ºå¯¹è±¡é›†åˆï¼Œä½ ä»ç„¶å¯ä»¥ä½¿ç”¨
 
     while(it.next){
     ...
     }
-ÕâÖÖ·½Ê½½øĞĞ·ÃÎÊ£¬Ö»ĞèÒªĞŞ¸Ä¹¹Ôìµü´úÆ÷µÄ·½Ê½¼´¿É£¬´ó´ó¸´ÓÃÁË´úÂë
+è¿™ç§æ–¹å¼è¿›è¡Œè®¿é—®ï¼Œåªéœ€è¦ä¿®æ”¹æ„é€ è¿­ä»£å™¨çš„æ–¹å¼å³å¯ï¼Œå¤§å¤§å¤ç”¨äº†ä»£ç 
 
-javaÊµÏÖ
-###Aggregate  ½Ó¿Ú£¬£¬±»±éÀúµÄ¼¯ºÏ½Ó¿Ú
+javaå®ç°
+###Aggregate  æ¥å£ï¼Œï¼Œè¢«éå†çš„é›†åˆæ¥å£
     public interface Aggregate {
     public abstract Iterator iterator();
     }
 
-###Iterator   ½Ó¿Ú£¬£¬µü´úÆ÷½Ó¿Ú£¬Ìá¹©µü´úÆ÷·½·¨
+###Iterator   æ¥å£ï¼Œï¼Œè¿­ä»£å™¨æ¥å£ï¼Œæä¾›è¿­ä»£å™¨æ–¹æ³•
+
     public interface Iterator {
     public abstract boolean hasNext();
     public abstract Object next();
     }
 
-####Book   Àà£¬£¬±íÊ¾Êé
+####Book   ç±»ï¼Œï¼Œè¡¨ç¤ºä¹¦
+
     public class Book {
     private String name;
     public Book(String name) {
@@ -30,7 +32,8 @@ javaÊµÏÖ
         return name;
     }
     }  
-####BookShelf   Àà£¬£¬±íÊ¾Êé¼Ü  ÊµÏÖ ¼¯ºÏ½Ó¿Ú
+####BookShelf   ç±»ï¼Œï¼Œè¡¨ç¤ºä¹¦æ¶  å®ç° é›†åˆæ¥å£
+
     public class BookShelf implements Aggregate {
     private Book[] books;
     private int last = 0;
@@ -51,7 +54,8 @@ javaÊµÏÖ
         return new BookShelfIterator(this);
     }
     }
-####BookShelfIterator   Àà£¬£¬ÊµÏÖµü´úÆ÷½Ó¿Ú
+####BookShelfIterator   ç±»ï¼Œï¼Œå®ç°è¿­ä»£å™¨æ¥å£
+
     public class BookShelfIterator implements Iterator {
     private BookShelf bookShelf;
     private int index;
@@ -76,7 +80,9 @@ javaÊµÏÖ
 
 
 
-####Èë¿Ú´úÂë
+
+####å…¥å£ä»£ç 
+
     import java.util.*;
 
     public class Main {
