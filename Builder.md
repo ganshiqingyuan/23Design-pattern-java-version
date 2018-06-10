@@ -9,6 +9,7 @@ java实现
 实例：一个编写文档的示例
 
 Builder类，规定所有材料的功能
+
     public abstract class Builder {
     public abstract void makeTitle(String title);
     public abstract void makeString(String str);
