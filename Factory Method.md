@@ -37,10 +37,10 @@ idcard包
 
 IDCard类，负责实现id卡产品的具体信息和实现产品的使用方法，即实现Product的use方法
 
-package idcard;
-import framework.*;
+	package idcard;
+	import framework.*;
 
-public class IDCard extends Product {
+	public class IDCard extends Product {
     private String owner;
     IDCard(String owner) {
         System.out.println("制作" + owner + "的ID卡。");
