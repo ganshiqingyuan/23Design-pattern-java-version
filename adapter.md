@@ -1,12 +1,12 @@
-##ÊÊÅäÆ÷Ä£Ê½
+## é€‚é…å™¨æ¨¡å¼
      
 
-¶ÔÒÑÓĞ´úÂë£¬ÒÑÓĞµÄÀà½øĞĞÊÊÅä£¬Ôö¼Ó¹¤×÷Ğ§ÂÊ
+å¯¹å·²æœ‰ä»£ç ï¼Œå·²æœ‰çš„ç±»è¿›è¡Œé€‚é…ï¼Œå¢åŠ å·¥ä½œæ•ˆç‡
 
    
 
-javaÊµÏÖ
-###Banner Àà£¬±»ÊÊÅä½ÇÉ«
+javaå®ç°
+### Banner ç±»ï¼Œè¢«é€‚é…è§’è‰²
 
 
     public class Banner {
@@ -24,7 +24,7 @@ javaÊµÏÖ
 
 
 
-###Print   Àà£¬£¬¶¨ÒåËùĞè·½·¨
+###Print   ç±»ï¼Œï¼Œå®šä¹‰æ‰€éœ€æ–¹æ³•
 
     public interface Print {
     public abstract void printWeak();
@@ -32,7 +32,7 @@ javaÊµÏÖ
     }
 
 
-####PrintBanner  Àà£¬£¬ÊÊÅäÆ÷£¬
+#### PrintBanner  ç±»ï¼Œï¼Œé€‚é…å™¨ï¼Œ
 
     public class PrintBanner extends Banner implements Print {
     public PrintBanner(String string) {
@@ -48,7 +48,7 @@ javaÊµÏÖ
 
 
 
-####Èë¿Ú´úÂë
+#### å…¥å£ä»£ç 
 
     public class Main {
     public static void main(String[] args) {
@@ -59,7 +59,7 @@ javaÊµÏÖ
     }
     
     
-ÕâÀïÍ¬ÑùµÄ¹¦ÄÜ±»±£ÁôÁËÏÂÀ´£¬
+è¿™é‡ŒåŒæ ·çš„åŠŸèƒ½è¢«ä¿ç•™äº†ä¸‹æ¥ï¼Œ
 
 
     
