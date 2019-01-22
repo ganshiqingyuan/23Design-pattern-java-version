@@ -24,7 +24,7 @@ java实现
 
 
 
-###Print   类，，定义所需方法
+### Print   类，，定义所需方法
 
     public interface Print {
     public abstract void printWeak();
